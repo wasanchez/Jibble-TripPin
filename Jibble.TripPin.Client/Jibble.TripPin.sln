@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5546E74A-531C-4E83-967C-03DBC93B33EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{ED6837EF-C1CE-40CA-AD8E-C9076F005F58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4D3122D1-26E4-4447-AFDE-907596A052F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jibble.TripPin.Application", "Core\Jibble.TripPin.Application\Jibble.TripPin.Application.csproj", "{5B95B9C3-ED81-4C40-82DA-7D0D4C812561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3CDBBCFB-844B-46EA-9248-4F6F1E360A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jibble.TripPin.Infrastructure", "Infrastructure\Jibble.TripPin.Infrastructure\Jibble.TripPin.Infrastructure.csproj", "{241E1FD4-B805-4392-82C8-3293C5CB66CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jibble.TripPin.Shared", "Shared\Jibble.TripPin.Shared\Jibble.TripPin.Shared.csproj", "{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jibble.TripPin.Console", "Presentation\Jibble.TripPin.Console\Jibble.TripPin.Console.csproj", "{42CDADA3-2C97-4326-AC14-77FBACCC616C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D4600A2B-FD05-43A8-A659-2896897B3EC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jibble.TripPin.Test", "Tests\Jibble.TripPin.Test\Jibble.TripPin.Test.csproj", "{D7E4B976-0D46-42E5-971E-79C9F192AEB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B95B9C3-ED81-4C40-82DA-7D0D4C812561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B95B9C3-ED81-4C40-82DA-7D0D4C812561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B95B9C3-ED81-4C40-82DA-7D0D4C812561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B95B9C3-ED81-4C40-82DA-7D0D4C812561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241E1FD4-B805-4392-82C8-3293C5CB66CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241E1FD4-B805-4392-82C8-3293C5CB66CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241E1FD4-B805-4392-82C8-3293C5CB66CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241E1FD4-B805-4392-82C8-3293C5CB66CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CDADA3-2C97-4326-AC14-77FBACCC616C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CDADA3-2C97-4326-AC14-77FBACCC616C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CDADA3-2C97-4326-AC14-77FBACCC616C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CDADA3-2C97-4326-AC14-77FBACCC616C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E4B976-0D46-42E5-971E-79C9F192AEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E4B976-0D46-42E5-971E-79C9F192AEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E4B976-0D46-42E5-971E-79C9F192AEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E4B976-0D46-42E5-971E-79C9F192AEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B95B9C3-ED81-4C40-82DA-7D0D4C812561} = {4D3122D1-26E4-4447-AFDE-907596A052F1}
+		{241E1FD4-B805-4392-82C8-3293C5CB66CA} = {3CDBBCFB-844B-46EA-9248-4F6F1E360A4E}
+		{4F42A1C7-71F1-40DB-849F-F5E426DCCE5C} = {ED6837EF-C1CE-40CA-AD8E-C9076F005F58}
+		{42CDADA3-2C97-4326-AC14-77FBACCC616C} = {5546E74A-531C-4E83-967C-03DBC93B33EC}
+		{D7E4B976-0D46-42E5-971E-79C9F192AEB0} = {D4600A2B-FD05-43A8-A659-2896897B3EC9}
+	EndGlobalSection
+EndGlobal
