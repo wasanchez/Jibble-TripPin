@@ -1,6 +1,6 @@
 ﻿using Jibble.TripPin.Application.Features.People.Queries;
 
-namespace Jibble.TripPin.Console;
+namespace Jibble.TripPin.Console.Models;
 
 public class ListPeopleModel : IViewModel
 {

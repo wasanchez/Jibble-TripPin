@@ -1,4 +1,6 @@
-﻿namespace Jibble.TripPin.Console.Views;
+﻿using Jibble.TripPin.Console.Models;
+
+namespace Jibble.TripPin.Console.Views;
 
 public interface IView
 {

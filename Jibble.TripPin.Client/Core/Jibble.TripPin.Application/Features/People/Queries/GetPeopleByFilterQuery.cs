@@ -13,14 +13,10 @@ public sealed class GetPeopleByFilterQuery : IRequest<IResult<List<GetPeopleByFi
 {
     
     public string FilterValue { get; } = string.Empty;
-    public int PageNamber { get;}
-    public int PageSize { get; }
 
-    public GetPeopleByFilterQuery(string filterValue, int pageNumber, int pageSize)
+    public GetPeopleByFilterQuery(string filterValue)
     {
         FilterValue = filterValue;
-        PageNamber = pageNumber;
-        PageSize = pageSize;
     }
 }
 

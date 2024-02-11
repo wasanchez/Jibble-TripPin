@@ -83,6 +83,5 @@ public class ListPeopleController : IController
 
     private void ReturnToMenu() {
         _menuController.LoadViewAsync();
-
     }
 }
