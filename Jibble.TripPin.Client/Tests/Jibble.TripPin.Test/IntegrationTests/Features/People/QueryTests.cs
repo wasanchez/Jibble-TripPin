@@ -65,7 +65,7 @@ public class QueryTests : IntegrationTestBase
     public async Task Search_People_Should_Be_Successful(string filterValue, bool expected) {
          //Arrange
         bool actual = false;
-        var query = new GetPeopleByFilterQuery(filterValue, 1, 10);
+        var query = new GetPeopleByFilterQuery(filterValue);
         //Acts
         var sut = await _mediator.Send(query);
 

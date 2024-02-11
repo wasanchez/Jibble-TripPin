@@ -10,14 +10,16 @@ public static class ServiceCollectionExtensions
         return services
             .AddViews()
             .AddSingleton<MenuController>()
-            .AddSingleton<ListPeopleController>();
+            .AddSingleton<ListPeopleController>()
+            .AddSingleton<SearchPeopleController>();
 
     }
 
     public static IServiceCollection AddViews(this IServiceCollection services) {
         return services
             .AddSingleton<IMenuView, MenuView>()
-            .AddSingleton<IListPeopleView, ListPeopleView>();
+            .AddSingleton<IListPeopleView, ListPeopleView>()
+            .AddSingleton<ISearchPeopleView, SearchPeopleView>();
 
     }
 

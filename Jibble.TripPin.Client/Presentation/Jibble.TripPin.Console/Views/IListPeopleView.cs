@@ -1,4 +1,5 @@
 ﻿using Jibble.TripPin.Console.Controllers;
+using Jibble.TripPin.Console.Models;
 
 namespace Jibble.TripPin.Console.Views;
 

@@ -1,4 +1,5 @@
 ﻿using Jibble.TripPin.Console.Controllers;
+using Jibble.TripPin.Console.Models;
 using Jibble.TripPin.Console.Views;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -33,9 +34,10 @@ public class MenuController : IController
         switch (menuItem.Id)
         {
             case (int)MenuOptions.ListPeople:
-                await DisplayListPeople();
+                await DisplayListOfPeopleScreen();
                 break;
             case (int)MenuOptions.SearchPeople:
+                await DisplaySearchPeopleScreen();
                 break;
             case (int)MenuOptions.FindAPerson:
                 break;    
@@ -55,9 +57,14 @@ public class MenuController : IController
          return Task.CompletedTask;
     }
 
-    private async Task DisplayListPeople() 
+    private async Task DisplayListOfPeopleScreen() 
     {
         var controller = _serviceProvider.GetService(typeof(ListPeopleController)) as ListPeopleController;
+        await controller.LoadViewAsync();
+    }
+
+    private async Task DisplaySearchPeopleScreen() {
+         var controller = _serviceProvider.GetService(typeof(SearchPeopleController)) as SearchPeopleController;
         await controller.LoadViewAsync();
     }
 

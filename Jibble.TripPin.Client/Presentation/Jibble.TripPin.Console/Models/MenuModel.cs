@@ -1,4 +1,4 @@
-﻿namespace Jibble.TripPin.Console;
+﻿namespace Jibble.TripPin.Console.Models;
 
 public class MenuModel : IViewModel
 {
