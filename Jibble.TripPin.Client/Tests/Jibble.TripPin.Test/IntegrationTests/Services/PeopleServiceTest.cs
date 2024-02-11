@@ -78,15 +78,15 @@ public class PeopleServiceTest : IntegrationTestBase
     [InlineData(-1, -1, true)]
     public async Task Get_People_Should_Be_Successful(int pageNumber, int pageSize, bool expected) {
          //Arrange
-        // bool actual = false;
+        bool actual = false;
         
-        // //Acts
-        // var sut = await _service.GetPeopleAsync(pageNumber, pageSize);
+        //Acts
+        var sut = await _service.GetPeopleAsync(pageNumber, pageSize);
 
-        // //Asserts
-        // Assert.NotNull(sut);
-        // actual = sut.Data.Count > 0;
-        // Assert.Equal(expected, actual);
+        //Asserts
+        Assert.NotNull(sut);
+        actual = sut.Data.Count > 0;
+        Assert.Equal(expected, actual);
     }
 
     [Theory(DisplayName = "Name update test.")]

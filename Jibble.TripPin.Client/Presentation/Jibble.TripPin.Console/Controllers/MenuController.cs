@@ -40,6 +40,7 @@ public class MenuController : IController
                 await DisplaySearchPeopleScreen();
                 break;
             case (int)MenuOptions.FindAPerson:
+                await DisplayFindAPersonScreen();
                 break;    
             case (int)MenuOptions.Quit:
                 Quit();
@@ -59,15 +60,19 @@ public class MenuController : IController
 
     private async Task DisplayListOfPeopleScreen() 
     {
-        var controller = _serviceProvider.GetService(typeof(ListPeopleController)) as ListPeopleController;
+        IController? controller = _serviceProvider.GetService(typeof(ListPeopleController)) as ListPeopleController;
         await controller.LoadViewAsync();
     }
 
     private async Task DisplaySearchPeopleScreen() {
-         var controller = _serviceProvider.GetService(typeof(SearchPeopleController)) as SearchPeopleController;
+         IController? controller = _serviceProvider.GetService(typeof(SearchPeopleController)) as SearchPeopleController;
         await controller.LoadViewAsync();
     }
 
+    private async Task DisplayFindAPersonScreen() {
+        IController? controller = _serviceProvider.GetService(typeof(FindAPersonController)) as FindAPersonController;
+        await controller.LoadViewAsync();
+    }
     private void Quit() {
         System.Console.WriteLine("\n");
         Environment.Exit(0);
