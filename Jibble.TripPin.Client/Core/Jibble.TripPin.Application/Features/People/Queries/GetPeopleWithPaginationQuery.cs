@@ -56,6 +56,6 @@ public sealed class GetPeopleWithPaginationQueryHandler : GenericValidator<GetPe
             _logger.LogError(ex, MessageConstants.GenericMessageError);
             return Result.Fail<PaginatedResult<GetPeopleWithPaginationDto>>(new Error(ex.Message).CausedBy(ex));
         }
-        throw new NotImplementedException();
+        
     }
 }
