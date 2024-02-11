@@ -51,10 +51,10 @@ public class SearchPeopleView : ISearchPeopleView
     {
           if (Model.Items.Count > 0 ) 
           {   
-            System.Console.WriteLine($"{Environment.NewLine}Last name \t\t First name \t\t Age \t\t Emails");
+            System.Console.WriteLine($"{Environment.NewLine}Username \t\tLast name \t\tFirst name \t\t Age \t\t Emails");
             foreach (var item in Model.Items)
             {
-                System.Console.WriteLine($"{item.LastName} \t\t {item.FirstName} \t\t {item.Age} \t\t {item.Emails}");
+                System.Console.WriteLine($"{item.UserName} \t\t{item.LastName} \t\t{item.FirstName} \t\t{item.Age} \t\t{item.Emails}");
             }
         }else {
             DisplayMessage("Data not found!");
