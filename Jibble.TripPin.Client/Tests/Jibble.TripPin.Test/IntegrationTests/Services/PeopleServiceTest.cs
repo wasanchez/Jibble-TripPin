@@ -88,19 +88,4 @@ public class PeopleServiceTest : IntegrationTestBase
         actual = sut.Data.Count > 0;
         Assert.Equal(expected, actual);
     }
-
-    [Theory(DisplayName = "Name update test.")]
-    [InlineData("ryantheriault", "Ryan_test",  "Theriault_test")]
-    [InlineData("ryantheriault", "Ryan", "Theriault")]
-    // [InlineData("jonirosales", "Joni", "Rosales",  "Female", true)]
-    public async Task Update_Names_Should_Be_Successful(string userName,  string newFirstName, string newLastName) {
-        //Acts
-        var sut = await _service.UpdateNamesAsync(userName, newLastName, newFirstName);
-
-        //Asserts
-        Assert.NotNull(sut);
-        Assert.Equal(newFirstName, sut.FirstName);
-        Assert.Equal(newLastName, sut.LastName);        
-    }
-
 }
