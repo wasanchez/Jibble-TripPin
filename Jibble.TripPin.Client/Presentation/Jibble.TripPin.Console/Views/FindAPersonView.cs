@@ -50,9 +50,12 @@ public class FindAPersonView : IFindAPersonView
     {
           if (Model.Person != null ) 
           {   
-            System.Console.WriteLine($"{Environment.NewLine}Last name: {Model.Person.LastName}{Environment.NewLine}First name: {Model.Person.FirstName}");
+            System.Console.WriteLine($"{Environment.NewLine}Username: {Model.Person.UserName}{Environment.NewLine}Last name: {Model.Person.LastName}{Environment.NewLine}First name: {Model.Person.FirstName}");
             System.Console.WriteLine($"Age: {Model.Person.Age}{Environment.NewLine}Gender: {Model.Person.Gender}");
-            System.Console.WriteLine($"Email: {Model.Person.Emails}");
+            System.Console.WriteLine($"Email: {Model.Person.Emails}{Environment.NewLine}Address Info: {Model.Person.AddressInfo}");
+            System.Console.WriteLine($"Home address: {Model.Person.HomeAddress}{Environment.NewLine}Favorite feature: {Model.Person.FavoriteFeature}");
+            System.Console.WriteLine($"Features: {Model.Person.Features}{Environment.NewLine}Friends: {Model.Person.Friends}");
+            System.Console.WriteLine($"Best friend: {Model.Person.BestFriend}");
         }else {
             DisplayMessage("Data not found!");
         }

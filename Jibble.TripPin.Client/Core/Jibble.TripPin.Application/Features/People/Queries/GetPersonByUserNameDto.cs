@@ -9,4 +9,10 @@ public class GetPersonByUserNameDto
     public string? Gender { get; set; }
     public int Age { get; set; }
     public string? Emails { get; set; }
+    public string? AddressInfo { get; set; }
+    public string? HomeAddress { get; set; } 
+    public string? FavoriteFeature { get; set; }
+    public string? Features { get; set; }
+    public string? Friends { get; set; }
+    public string? BestFriend { get; set; }
 }
